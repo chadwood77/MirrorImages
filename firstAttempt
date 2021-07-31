@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class MirrorImages {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 1.first line obtains an integer from the user= number of test cases to print=
+		// numOfTestCases
+		// each test case starts by getting a number of rows from the user =
+		// userRequestedRows
+		// the second integer from the user gets the number of columns the user wants =
+		// userRequestedColumns
+		// all printed items will either be a period (.) or an asterisk (*)
+		// create a nested loop with rows as the outer loop and columns as the inner
+		// loop
+		// print "test x" depending on the test number being looped, label the first
+		// tests with number 1
+		// and follow that with the appropriate number characters of . or * for each row
+		// create an array for the inner loop and switch the output from . to * or vice
+		// versa depending on the users initial input
+		// when that loop completes move to the next test case and label that test case
+		// one integer higher than the previous case
+
+		Scanner scan = new Scanner(System.in);
+		int numOfTestCases = scan.nextInt();
+		int userRequestedRows = scan.nextInt();
+		int userRequestedColumns = scan.nextInt();
+		int x = 1;
+		String arrayForDotsAndStars[][] = new String[userRequestedRows][userRequestedColumns];
+		for (int i = 0; i < numOfTestCases; i++) {
+			for (int k = 0; k < userRequestedRows; k++) {
+				for (int j = 0; j < userRequestedColumns; j++) {
+					Arrays.toString(arrayForDotsAndStars);
+					String dotAndStarInput = scan.next();
+					System.out.println("Test" + x);
+					x += 1;
+					System.out.println(arrayForDotsAndStars);
+				}
+
+			}
+		}
+
+	}
+}
